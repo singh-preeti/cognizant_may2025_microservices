@@ -1,0 +1,7 @@
+SELECT * FROM Employee WHERE Department = ‘IT’;
+SELECT * FROM Employee WHERE Department != ‘IT’;
+SELECT * FROM Employee WHERE Department <> ‘IT’;
+SELECT * FROM Employee WHERE Age > 26;
+SELECT * FROM Employee WHERE Age < 27;
+SELECT * FROM Employee WHERE Salary >= 50000;
+SELECT * FROM Employee WHERE Salary <= 50000;
