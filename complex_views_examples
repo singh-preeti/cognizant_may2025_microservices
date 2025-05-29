@@ -1,0 +1,35 @@
+Complex View
+Let us understand MySQL Complex view with an example. We already discussed INNER JOIN . Let us create a VIEW-based INNER JOIN SELECT statement. We want a view that will retrieve the data from the Employee and Gender table and the column the view should include are EmployeeId, Employee Name, Salary, Gender Name, and Department. To do so, execute the below CREATE VIEW SQL Statement.
+CREATE VIEW vwEmployees
+AS 
+SELECT emp.Id, emp.Name, emp.Salary, gen.Name AS Gender
+FROM Employee emp
+INNER JOIN Gender gen
+on emp.GenderId = gen.ID;
+Now, issue a select query against the vwEmployees complex view by executing the below SQL SELECT Statement.
+SELECT * FROM vwEmployees;
+Once you execute the above query, you will get the following output which will retrieve the data from both Employee and Gender table as shown in the below image.
+ 
+A view that is created based on a single table will also be considered as a complex view provided if the query contains Distinct. Aggregate Function, Group by Clause, having Clause, calculated columns, and set operations. For example, the following is a view based on the single table, but it will be considered as a complex view as it uses the group by clause.
+CREATE VIEW vwCountEmployees
+AS 
+SELECT Department, Count(*) as TotalEmployee
+FROM Employee Group BY Department;
+Now, issue a select query against the vwCountEmployees complex view by executing the below SQL SELECT Statement.
+SELECT * FROM vwEmployees;
+Once you execute the above SQL query, you will get the following output which will retrieve the aggregated data i.e. the Department name and the number of employees in each department as shown in the below image.
+ 
+Note: We will discuss more Complex views in our Complex Views in the MySQL article. In this article, we are focusing on the simple view.
+Can we create a view based on other views?
+Yes, it is possible in MySQL to create a view based on other views. Suppose we want to create a view vwSalaryDetails based on the vwEmployees view to show the name and salary of employees. Then we can do the same by executing the below CREATE View Statement.
+CREATE VIEW vwSalaryDetails 
+AS
+SELECT Name, Salary
+FROM vwEmployees;
+Now, issue a select query against the vwSalaryDetails view by executing the below SQL SELECT Statement.
+SELECT * FROM vwSalaryDetails;
+Once you execute the above SQL query, you will get the following output which will retrieve the Name and Salary of each employee as shown in the below image.
+ 
+Can we drop a table that has dependent views on it in MySQL?
+Yes, it is possible in MySQL to drop a table even if any dependent views are associated with it, but the views that are associated with it will not be dropped. They still execute in the database only with the status as inactive object and all those views become active and start functioning provided the table is recreated.
+
