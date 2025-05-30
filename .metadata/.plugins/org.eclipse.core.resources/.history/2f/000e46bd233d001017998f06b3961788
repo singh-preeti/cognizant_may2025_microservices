@@ -1,0 +1,31 @@
+package com.cognizant.corejava;
+
+class Employee{
+	
+	public void displayEmpName() {
+		
+		System.out.println("All Employee's name are: ");
+	}
+	public float Caculatesalary(float salary,float bonus) {
+		   float total_salary;
+		   total_salary = salary +  bonus;
+		   System.out.println(total_salary);
+		   return total_salary;
+	}
+}
+public class Cognizant_Emp {
+	
+	public int showExperience(int exp) {
+		System.out.println(exp);
+		return exp;
+	}
+	
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+		emp.Caculatesalary(20000, 2000);
+		emp.displayEmpName();
+		Cognizant_Emp emp1 = new Cognizant_Emp();
+		emp1.showExperience(5);
+	}
+
+}

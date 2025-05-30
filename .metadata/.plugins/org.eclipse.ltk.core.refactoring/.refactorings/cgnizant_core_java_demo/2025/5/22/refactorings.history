@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.cognizant.corejava.AllLoops.java&apos; to &apos;ATMWithrawal.java&apos;&#x0D;&#x0A;- Original project: &apos;cgnizant_core_java_demo&apos;&#x0D;&#x0A;- Original element: &apos;com.cognizant.corejava.AllLoops.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cognizant.corejava.ATMWithrawal.java&apos;" description="Rename compilation unit &apos;AllLoops.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.cognizant.corejava{AllLoops.java" name="ATMWithrawal.java" references="false" stamp="1748606566723" version="1.0"/>
+</session>

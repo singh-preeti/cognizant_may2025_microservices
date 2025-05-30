@@ -1,0 +1,19 @@
+package com.cognizant.corejava;
+
+
+public class Cognizant_Emp  extends Employee {
+	
+	public int showExperience(int exp) {
+		System.out.println(exp);
+		return exp;
+	}
+	
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+		emp.Caculatesalary(20000, 2000);
+		emp.displayEmpName();
+		Cognizant_Emp emp1 = new Cognizant_Emp();
+		emp1.showExperience(5);
+	}
+
+}

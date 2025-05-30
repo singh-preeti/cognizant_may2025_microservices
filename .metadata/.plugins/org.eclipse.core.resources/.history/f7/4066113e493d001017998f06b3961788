@@ -1,0 +1,38 @@
+package com.cognizant.corejava;
+
+
+
+public class ElseIfCase {
+	public void Caculatesalary(float salary,float bonus) {
+		   float total_salary = salary+ bonus;
+		   float half_bonus = salary + bonus;
+		   int year_of_exp = 4;
+		   //outer condition
+		   if(year_of_exp >=6) {
+			   total_salary = salary +  bonus;
+			  System.out.println(total_salary);
+			    }
+		   else if(year_of_exp ==4 ) 
+		   {
+			   System.out.println(half_bonus);
+		   }
+		   else if(year_of_exp == 4 && salary >=15000) {
+			   System.out.println(salary + half_bonus/2 );
+		   }
+		   else
+		   {
+			   System.out.println(" Pay just salary");
+		   }
+		  
+		  
+
+}
+
+	public static void main(String[] args) {
+		ElseIfCase obj1 = new ElseIfCase();
+		obj1.Caculatesalary(20000, 2000);
+		
+	}
+}
+	
+	

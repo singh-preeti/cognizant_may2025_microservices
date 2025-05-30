@@ -1,0 +1,28 @@
+package com.cognizant.corejava;
+
+import java.util.Scanner;
+
+class ATMWithrawal {
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		double balance = 2000.0;
+		
+		System.out.println("Welcome to the Any bank ATM");
+		
+		System.out.println("Do you want to makew aq transaction? (yes/no):");
+		
+		String choice = scan.nextLine();
+		
+		while(choice.equalsIgnoreCase("yes")) {
+			System.out.println("Enter amount to withdraw!");
+			double amount = scan.nextDouble();
+			scan.nextLine();
+		}
+	}
+}
+public class AllLoops {
+	
+	
+
+}

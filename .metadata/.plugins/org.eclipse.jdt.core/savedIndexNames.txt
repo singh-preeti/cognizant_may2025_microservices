@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\sushi\Desktop\Cognizant_Microservices_2025\.metadata\.plugins\org.eclipse.jdt.core
+850334632.index
+1304134281.index
